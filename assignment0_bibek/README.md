@@ -9,11 +9,12 @@ Run this command on the directory with all the other files:
 
 ## 2. Change the directory to build and compile
 \> cd build
+
 \> make
 
 ## 3. Execute the main executable
-\> ./main <file1.mtx> <file2.mtx> <var>
-###### note : here file1.mtx is a matrix file while file2.mtx can be both matrix or vector. For matrix-matrix multiplication choose var = 1 amd for matrix-vector multiplication choose var = 0. To run the executable you will need to add the .mtx files in build directory.
+\> ./main <file1.mtx> <file2.mtx> <variable>
+###### note : here file1.mtx is a matrix file while file2.mtx can be both matrix or vector. For matrix-matrix multiplication choose variable = 1 amd for matrix-vector multiplication choose variable = 0. To run the executable you will need to add the .mtx files in build directory.
 
 
 ### References used
