@@ -13,7 +13,7 @@ Run this command on the directory with all the other files:
 \> make
 
 ## 3. Execute the main executable
-\> ./main <file1.mtx> <file2.mtx> <variable>
+\> ./main <file1.mtx> <file2.mtx> variable
 ###### note : here file1.mtx is a matrix file while file2.mtx can be both matrix or vector. For matrix-matrix multiplication choose variable = 1 amd for matrix-vector multiplication choose variable = 0. To run the executable you will need to add the .mtx files in build directory.
 
 
