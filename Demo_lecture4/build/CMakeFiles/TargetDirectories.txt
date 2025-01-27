@@ -1,0 +1,6 @@
+/home/kairvilodhiya/MANE6965/computing-at-scale-demo-2025/Demo_lecture4/build/CMakeFiles/main.dir
+/home/kairvilodhiya/MANE6965/computing-at-scale-demo-2025/Demo_lecture4/build/CMakeFiles/edit_cache.dir
+/home/kairvilodhiya/MANE6965/computing-at-scale-demo-2025/Demo_lecture4/build/CMakeFiles/rebuild_cache.dir
+/home/kairvilodhiya/MANE6965/computing-at-scale-demo-2025/Demo_lecture4/build/mathlibrary/CMakeFiles/mathlibrary.dir
+/home/kairvilodhiya/MANE6965/computing-at-scale-demo-2025/Demo_lecture4/build/mathlibrary/CMakeFiles/edit_cache.dir
+/home/kairvilodhiya/MANE6965/computing-at-scale-demo-2025/Demo_lecture4/build/mathlibrary/CMakeFiles/rebuild_cache.dir
