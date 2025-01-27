@@ -17,7 +17,7 @@ I am interested in autonomous guidance, navigation, and control and applying mac
 
 
 ## Project
-*Project Repository:* 
-*Project Proposal:*
+*Project Repository: [Project Repository](https://github.com/scottblender/computing-at-scale-2025-SB-Final-Project/tree/main) 
+*Project Proposal:[Project Proposal](https://github.com/scottblender/computing-at-scale-2025-SB-Final-Project/blob/main/project-proposal.md)
 *Project Progress Report:*
 *Project Final Report:*
