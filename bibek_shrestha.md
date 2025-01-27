@@ -1,0 +1,3 @@
+- Bibek Shrestha
+- PhD student in Aeronautical Engineering
+- My current research involves generating solver for Navier Stokes Equations which could be added to lab software later to develop a the Fluid-Solid coupling.
