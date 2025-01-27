@@ -1,1 +1,24 @@
-# This is my READme file. My name is Ickbum Kim, Ph.D. student in Mechanical Engineering. My research is about 3D reconstruction, where I make 3D point cloud using 2D images.
+# Ickbum Kim
+
+## Basic Facts
+*Major: * Mechanical Engineering
+*Advisor: * Sandeep Singh
+*Github Username* : ickbumk
+*Course Repository * : https://github.com/ickbumk/cpp
+
+## Reseach Interests
+My research interests include:
+- 3D Reconstruction
+- Machine Learning
+- Sensor Fusion
+
+## Homework Submissions (pull requests):
+1. https://github.com/ickbumk/cpp/pull/1
+2.
+
+## Project
+*Project Repository: *
+*Project Proposal: *
+*Project Progress Report:*
+*Project Final Report: *
+
