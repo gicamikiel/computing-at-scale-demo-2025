@@ -17,8 +17,10 @@ My research interests include:
 2.
 
 ## Project
-*Project Repository: *
-*Project Proposal: *
+*Project Repository: * https://github.com/ickbumk/cas_project 
+
+*Project Proposal: * https://github.com/ickbumk/cas_project/blob/main/README.md 
+
 *Project Progress Report:*
 *Project Final Report: *
 
