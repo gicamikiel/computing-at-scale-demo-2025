@@ -1,19 +1,22 @@
 #include <sstream>
+#include <cassert>
 
 class Vector {
   public:
 
   Vector() : data_(nullptr), size_(0) {}
   explicit Vector(int size) {
-    // do we need to do this?
-    //if(data_ != nullptr)
-    //{
-    //  size_ = 0;
-    //  delete data_;
-    //  data_ = nullptr;
-    //}
     size_ = size;
     data_ = new double[size];
+  }
+
+  // copy constructor
+  Vector(const Vector * v) : data_(new double[v.size()]), size_(v.size())  {
+    std::cout<<"Calling copy constructor\n";
+    assert(v.size() == size_);
+    for(int i=0; i< v.size(); ++i){
+      data_[i] = v[i];
+    }
   }
 
   ~Vector() noexcept {
