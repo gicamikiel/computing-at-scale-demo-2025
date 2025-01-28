@@ -14,6 +14,6 @@ My research interests include high performance computing, applied mathematics an
 
 ## Project
 *Project Repository:*
-*Project Proposal:*
+*Project Proposal:*[project proposal](https://github.com/abhiyanpaudel/computing-at-scale/blob/course_project/project/project_proposal.pdf)
 *Project Progress Report:*
 *Project Final Report:*
