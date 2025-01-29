@@ -1,10 +1,10 @@
 # Zachary Knowlan
 
 ## Basic Facts
-*Major:* Mechanical Engineering
-*Advisor:* Jacob Merson
-*Github Username*: zacharyknowlan
-*Course Repository*: https://github.com/zacharyknowlan/computing_at_scale_git
+- *Major:* Mechanical Engineering
+- *Advisor:* Jacob Merson
+- *Github Username*: zacharyknowlan
+- *Course Repository*: https://github.com/zacharyknowlan/computing_at_scale_git
 
 
 ## Research Interests
@@ -17,7 +17,7 @@
 
 
 ## Project
-*Project Repository:* https://github.com/zacharyknowlan/computing_at_scale_git
-*Project Proposal:* In class git repo. https://github.com/zacharyknowlan/computing_at_scale_git
-*Project Progress Report:*
-*Project Final Report:*
+- *Project Repository:* https://github.com/zacharyknowlan/computing_at_scale_git
+- *Project Proposal:* In class git repo. https://github.com/zacharyknowlan/computing_at_scale_git
+- *Project Progress Report:*
+- *Project Final Report:*
