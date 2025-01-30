@@ -1,10 +1,10 @@
 # Ickbum Kim
 
 ## Basic Facts
-*Major: * Mechanical Engineering
-*Advisor: * Sandeep Singh
-*Github Username* : ickbumk
-*Course Repository * : https://github.com/ickbumk/cpp
+- *Major: * Mechanical Engineering
+- *Advisor: * Sandeep Singh
+- *Github Username* : ickbumk
+- *Course Repository * : https://github.com/ickbumk/cpp
 
 ## Reseach Interests
 My research interests include:
@@ -17,8 +17,8 @@ My research interests include:
 2.
 
 ## Project
-*Project Repository: *
-*Project Proposal: *
-*Project Progress Report:*
-*Project Final Report: *
+- *Project Repository: *
+- *Project Proposal: *
+- *Project Progress Report:*
+- *Project Final Report: *
 
