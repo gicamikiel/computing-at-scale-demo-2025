@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.31.0)
+cmake_minimum_required(VERSION 3.22.0)
 project(computing_at_scale CXX)
 
 add_subdirectory(mathlibrary)

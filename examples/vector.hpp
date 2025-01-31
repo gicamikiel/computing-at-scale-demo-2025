@@ -4,8 +4,11 @@
 class Vector {
   public:
 
-  Vector() : data_(nullptr), size_(0) {}
+  Vector() : data_(nullptr), size_(0) {
+    std::cout<<"default constructor\n";
+  }
   explicit Vector(int size) {
+    std::cout<<"size constructor\n";
     size_ = size;
     data_ = new double[size];
   }
@@ -16,17 +19,64 @@ class Vector {
   // "const Vector& v" equivalent to "Vector const & v"
   // const applies to the thing to the left of it, except here where it applies everywhere(?)
   Vector(const Vector& v) : data_(new double[v.size()]), size_(v.size()) {
+    std::cout<<"copy constructor\n";
     assert(v.size() == size_);
     for(int i=0; i<v.size(); ++i) {
       data_[i] = v[i];
     }
   }
 
+  // "homework"
+  // define a type
+  // take value when constructed
+  // implement all 5
+
+  // use when other will not be used anymore
+  // efficient transfer of resources
+  // lvalue (named obj) rvalue (temp obj)
+  // z = x + y (z is lvalue, x+y is rvalue)
+  // void f(int&& x) x is rvalue reference
+  // void g(int& x) x is lvalue reference
+  // void h(int x) x is a lvalue
+  Vector(Vector&& other) {
+    std::cout<<"move constructor";
+    std::swap(data_, other.data_);
+    std::swap(size_, other.size_);
+  }
+
   ~Vector() noexcept {
+    std::cout<<"destructor\n";
     delete data_;
   }
 
-  // TODO operator[]
+  // note: we want value semantic or deep copy
+  // note: if we use Vector v, c++ makes a copy!!!!!!!
+  // note: if we use Vector& v, it does not!!!!!!!!
+  Vector& operator=(Vector other) {
+    std::cout<<"copy assignment\n";
+    // could get away with Vector v
+    // uses copy constructor
+    // if exception throws here, other grows out of scope, and no memory leak
+    // no code reuse, reuses code in copy constructor
+    // good default choice, but may cost performance
+    std::swap(data_, other.data_); // swapping the address (fine to do this because v is a copy)
+    std::swap(size_, other.size_); // swapping
+    return *this;
+
+    // use when using Vector& v
+    /*
+    if(this != &other) {
+      size_ = other.size_;
+      data_ = new double[size_];
+      for(int i=0; i<other.size(); ++i) {
+        data_[i] = other[i];
+        // if exception throws here, we have a memory leak
+      }
+    }
+    return *this;
+    */    
+  }
+
   [[nodiscard]]
   double& operator[](int idx) {
     if(idx >= size_) {
@@ -54,6 +104,10 @@ class Vector {
   // what does copy construction look like
 
   private:
+  // note, if we use default constructor
+  // we get mix of value and reference semantics
+  // because data_ is guaranteed to agree between two vector objects
+  // but then size_ is copied by value and might change
   double* data_;
   int size_;
 };

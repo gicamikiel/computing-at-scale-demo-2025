@@ -1,7 +1,7 @@
 #include <iostream>
 #include "vector.hpp"
 
-int main(int argc, char** argv) {
+void constructor_assignment() {
   Vector v(10);
   for(int i=0; i<v.size(); ++i){
     v[i] = i;
@@ -13,8 +13,21 @@ int main(int argc, char** argv) {
   }
   std::cout<<"\n";
 
-  for(int i=0; i<v2.size(); ++i){
-    std::cout<<v2[i]<<" ";
+  Vector v3;
+  v3 = v;
+}
+
+void move_semantic() {
+  Vector v2;
+  {
+    Vector v3(100);
+    for(int i=0; i<v3.size(); ++i) {
+      v3[i] = i;
+    }
+    v2 = std::move(v3);
   }
-  std::cout<<v2[i]<<" ";
+}
+
+int main(int argc, char** argv) {
+  move_semantic();
 }
