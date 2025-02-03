@@ -1,5 +1,6 @@
 #include <iostream>
 #include "vector.hpp"
+#include "noisy.hpp"
 
 void constructor_assignment() {
   Vector v(10);
@@ -18,9 +19,20 @@ void constructor_assignment() {
 }
 
 void move_semantic() {
+  Vector v2; // default constructor
+  {
+    Vector v3(10); // size constructor
+    for(int i=0; i<v3.size(); ++i) {
+      v3[i] = i;
+    }
+    v2 = std::move(v3); // move constructor, copy assignment
+  }
+}
+
+void destructor_test() {
   Vector v2;
   {
-    Vector v3(100);
+    Vector v3(10);
     for(int i=0; i<v3.size(); ++i) {
       v3[i] = i;
     }
@@ -28,6 +40,19 @@ void move_semantic() {
   }
 }
 
+void noisy() {
+  Noisy n1(1);
+  Noisy n2(2);
+  n1.print();
+  n2.print();
+
+  n2 = std::move(n1); 
+  n2.print();
+  //n2.print();
+}
+
 int main(int argc, char** argv) {
-  move_semantic();
+  //destructor_test();
+  //move_semantic();
+  noisy();
 }
