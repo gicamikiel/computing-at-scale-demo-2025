@@ -59,6 +59,7 @@ class Vector {
   // TODO operator[]
   [[nodiscard]]
   double& operator[](int idx) {
+    std::cout<<"non-const operator[]\n";
     if(idx >= size_) {
       std::stringstream ss;
       ss << "idx "<<idx<< " is out of bounds for a size " << size_;
@@ -69,6 +70,7 @@ class Vector {
 
   [[nodiscard]]
   const double& operator[](int idx) const {
+    std::cout<<"Const operator[]\n";
     if(idx >= size_) {
       std::stringstream ss;
       ss << "idx "<<idx<< " is out of bounds for a size " << size_;
