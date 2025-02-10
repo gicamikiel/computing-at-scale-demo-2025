@@ -1,6 +1,7 @@
 #include <sstream>
 #include <cassert>
 
+template <class T>
 class Vector {
 	public:
 
@@ -10,7 +11,7 @@ class Vector {
 	explicit Vector(int size) {
 		std::cout<<"size constructor\n";
 		size_ = size;
-		data_ = new double[size];
+		data_ = new T[size];
 	}
 
 	// copy constructor
@@ -18,7 +19,7 @@ class Vector {
 	// we are not modifying the original so we use const
 	// "const Vector& v" equivalent to "Vector const & v"
 	// const applies to the thing to the left of it, except here where it applies everywhere(?)
-	Vector(const Vector& v) : data_(new double[v.size()]), size_(v.size()) {
+	Vector(const Vector& v) : data_(new T[v.size()]), size_(v.size()) {
 		std::cout<<"copy constructor\n";
 		assert(v.size() == size_);
 		for(int i=0; i<v.size(); ++i) {
@@ -83,7 +84,7 @@ class Vector {
 	*/
 
 	[[nodiscard]]
-	double& operator[](int idx) {
+	T& operator[](int idx) {
 		if(idx >= size_) {
 			std::stringstream ss;
 			ss << "idx "<<idx<< " is out of bounds for a size " << size_;
@@ -93,7 +94,7 @@ class Vector {
 	}
 
 	[[nodiscard]]
-	const double& operator[](int idx) const {
+	const T& operator[](int idx) const {
 		if(idx >= size_) {
 			std::stringstream ss;
 			ss << "idx "<<idx<< " is out of bounds for a size " << size_;
@@ -120,6 +121,6 @@ class Vector {
 	// we get mix of value and reference semantics
 	// because data_ is guaranteed to agree between two vector objects
 	// but then size_ is copied by value and might change
-	double* data_;
+	T* data_;
 	int size_;
 };

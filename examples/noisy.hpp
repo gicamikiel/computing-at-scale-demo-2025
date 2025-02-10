@@ -13,6 +13,7 @@ class Noisy {
 
 	Noisy(Noisy&& other) {
 		// is this correct?
+		//std::swap(number_, other.number_);
 		number_ = other.number_;
 
 		std::cout<<"move constructor " << number_ <<"\n";
