@@ -15,7 +15,8 @@ I am interested in adaptive meshing methods for high speed CFD problems.
 
 
 ## Homework Submissions (pull requests):
-1. https://github.com/gicamikiel/Computing-at-Scale/pull/1
+0. https://github.com/gicamikiel/Computing-at-Scale/pull/1
+1. https://github.com/gicamikiel/Computing-at-Scale/pull/2
 
 
 ## Project
