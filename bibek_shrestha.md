@@ -15,10 +15,10 @@ I am intereted in scientific computing especially in the field of Computational 
 
 ## Homework Submissions (pull requests):
 
-1. https://github.com/Bibek-ko-git/computing-at-scale-demo-2025/pull/1
+0. https://github.com/Bibek-ko-git/computing-at-scale-demo-2025/pull/1
+1. https://github.com/Bibek-ko-git/AdvComp_at_Scale/pull/1
 2. 
-3. 
-4.
+3.
 
 
 ## Project 
