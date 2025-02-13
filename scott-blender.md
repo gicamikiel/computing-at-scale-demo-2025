@@ -4,7 +4,7 @@
 *Major:* Aeronautical Engineering
 *Advisor:* Sandeep Singh
 *Github Username*: scottblender
-*Course Repository*: https://github.com/scottblender/computing-at-scale-assignments-2025-SB
+*Course Repository*:[ https://github.com/scottblender/computing-at-scale-assignments-SB-2025](https://github.com/scottblender/computing-at-scale-assignments-SB-2025)
 
 
 ## Research Interests
