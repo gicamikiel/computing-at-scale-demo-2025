@@ -18,7 +18,8 @@ My research interests include:
 
 ## Homework Submissions (pull requests):
 1. https://github.com/ickbumk/cpp/pull/1
-2.
+2. https://github.com/ickbumk/cpp/pull/2 
+
 
 ## Project
 *Project Repository: * https://github.com/ickbumk/cas_project 
