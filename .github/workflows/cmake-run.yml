@@ -35,7 +35,7 @@ jobs:
     
     - name: Results
       run: |
-        cd ../examples/build/Testing/Temporary
+        cd ./examples/build/Testing/Temporary
         cat LastTest.log
 
       
