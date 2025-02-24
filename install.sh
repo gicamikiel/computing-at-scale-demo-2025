@@ -4,6 +4,7 @@ cmake -S ../Catch2 -B ../build/Catch2 \
 cmake --build ../build/Catch2 -j$(nproc) --target install
 
 export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:../build-Catch2/install
-cmake . -B $(pwd)/build \
+cmake -S ./examples -B ./examples/build \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_CXX_COMPILER=g++
+cmake --build ./examples/build -j$(nproc)
