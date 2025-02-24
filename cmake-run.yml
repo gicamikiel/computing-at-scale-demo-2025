@@ -1,0 +1,21 @@
+name: CMake Tests
+
+on:
+  push:
+
+jobs:
+  buildTest:
+    runs-on: ubuntu-22.04
+
+    defaults:
+      run:
+        shell: bash
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Build
+        run: ./examples/install.sh
+
+      
