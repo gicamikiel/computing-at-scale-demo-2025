@@ -24,6 +24,6 @@ I am interested in adaptive meshing methods for high speed CFD problems.
 
 *Project Proposal:* https://github.com/gicamikiel/Computing-at-Scale/releases/tag/term_project_proposal
 
-*Project Progress Report:*
+*Project Progress Report:* https://github.com/gicamikiel/Computing-at-Scale/releases/tag/midterm_progress_report
 
 *Project Final Report:*
